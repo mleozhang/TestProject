@@ -23,13 +23,32 @@ class TestProjectUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    /*
+     * 历史数据
+     */
+    func testReqHistory() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
+        app.buttons["请求历史"].tap()
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    /*
+     *刷新新增数据
+     */
+    func testUpdateNewData() throws {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        
+        app.buttons["请求历史"].tap()
+        let table1 = app.tables.element(boundBy: 0)
+        table1.swipeDown()
+        
+        sleep(2)
+        XCTAssert(true)
     }
 
     func testLaunchPerformance() throws {

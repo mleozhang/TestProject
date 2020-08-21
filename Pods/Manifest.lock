@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - MJRefresh (3.4.3)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - MJRefresh
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - MJRefresh
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 0ae8244aa424dff87ab8efc81de7d77cb26af680
+
+COCOAPODS: 1.9.1
