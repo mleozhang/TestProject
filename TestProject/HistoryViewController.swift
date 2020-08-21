@@ -119,18 +119,18 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
         
     }
     
-   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reuseId="historyReuseId"
         let cell=UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: reuseId)
         let module=data[indexPath.row]
         cell.textLabel?.text=module.authorizations_url
         return cell;
     }
-   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50;
     }
     
